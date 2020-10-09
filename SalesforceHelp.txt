@@ -1,0 +1,259 @@
+
+How traditional bussiness works with IT infra structure.
+tangible service--
+intangible service--
+
+Cloud switch from company owned sw and hw as assets to pay per use service based model
+
+
+CRM--
+B2B--mahindra--atos
+B2C--mahindra--individual customers
+
+Sales force helps to manage the data.
+
+CPQ--
+Service console
+NPSP 
+custom app
+console app 
+We get only 2 options custom and console.
+CPQ is a managed package that needs to be installed. It's not a type of app.
+What is Salesforce? Salesforce is a customer relationship management solution that brings companies and customers together. It's one integrated CRM platform that gives all your departments — including marketing, sales, commerce, and service — a single, shared view of every 
+
+Salesforce is your customer success platform, designed to help you sell, service, market, analyze, and connect with your customers.
+
+Salesforce is cloud computing platform.
+Cloud Computing : is using remote servers to manage and process the rather than doing it on  local server/pc. Data/software application  is stored on remote servers and we are accessing it on our own machines using internet.Using sw application over internet.
+it involves 2 entities
+
+1. sw apps deliverd on the cloud(vendor)  Salesforec
+2. sw apps accessible via cloud(client)  XYZ 
+cloud-->internet
+computing--<action,computing
+ three models of cloud service
+Software as a Service(SaaS): It refers to cloud-based software/application  that is hosted online by a company and is available for purchase on a subscription basis and is delivered via the internet.JIRA , DropBox
+
+Platform as a Service (PaaS) : It refers to cloud-based platform services that provide developers with a framework they can use to build custom applications upon. Google App Engine,OpenShift
+
+Infrastructure as a Service (IaaS): It refers to cloud-based infrastructure resources that are delivered to organizations via virtualization technology that help organizations build and manage their servers, network, operating systems, and data storage.AWS,Azure
+
+Salesforce is both SaaS and PaaS
+IOT cloud, analytical platform ,Salesforce CRM
+
+
+Deployment Models;
+Public:amazon ,salesforce--anybody can access the services 
+is one in which the services and infrastr are provided off-site over internet.
+
+Private: azure ,vmware,open stack --companies will buy the sw and hw from vendor and install in their premises, it will be accessable to the employees of that comany.private cloud is one which the services and infratrs are maintained on private nw.
+
+
+Hybrid:combination of public and private
+
+
+Benefits of cloud computing & Salesforce
+cheaper
+scalable
+collabration
+
+Sales force is a company which has many services,they are build on force.com as a platform
+
+Product offer by Salesforce:
+Sales cloud--service which controls the sales process . will help the salesperson to share the data abt their customers ,lead details,contacts,Opportunity,account etc.doing Sales .The Sales Cloud is a CRM platform that enables you to manage your organization’s sales, marketing and customer support facets.
+
+Marketing cloud --marketing activites , to perform marketing campain such as mass emailers,mass sms services , digital mkting.target the customers. to sell product we need to do marketing 
+
+Service -- providing best possible services to customer,query will get raised as a ticket and then assigned to the service agent . we can get the visibility abt the ticket raised who has solved, how many tickets,who are the service agents, why we are getting such queries ,whatbtype of queries.cust satisfaction 
+
+
+Analytics --do analysis, we can integrate the sales ,mkt ans service cloud to basically get the insight of business , we can understand wht went well, wht was missing , how we can improve our business. why there is low sales 
+
+Community --provies a platform to the customer where they can talk with each other. for example Question And Answer forum.
+
+
+App -- To develop custom apps that will run on the Salesforce platform, you can use the Salesforce App Cloud. It provides you with a collection of development tools that you can utilize to create custom applications. Some of the tools in the App Cloud include example Salesforce lightning , salesforce one for mob app etc.
+
+Force.com, allows admins and developers to create websites and applications into the main Salesforce.com application.
+AppExchange is an online application marketplace for third-party applications that run on the Force.com platform.
+Heroku Enterprise gives developers the flexibility to create apps using their preferred languages and tools.
+Salesforce Thunder is big data and rules processing engine designed to analyze events and take personalized actions.
+Salesforce Sandbox allows developers to test ideas in a safe and isolated development environment.
+
+Commerce -- helps to better your e-commerce. The commerce cloud enables your organization to provide seamless customer service and experience irrespective of  your customer’s location (online or in-store)
+
+
+Iot -- When your organization needs to store and process Internet of Things (IoT) data, you can utilize the service of Salesforce IoT cloud. The platform is built to take in massive volumes of data generated by devices, sensors, websites, applications, customers and partners. On receiving this data, the platform initiates actions to give you real time responses.
+
+
+Health-- If you are a Health IT organization and require a CRM system that incorporates doctor-patient relationship and record management, then Health Cloud is what you need. Through the patient profile you can support one-to-one relationship by integrating information from multiple data sources.
+
+https://developer.salesforce.com/
+
+ligtningApp platform
+Heroku platform
+Force,.com devloper paltform 
+
+Objects as contact, leads,account ,opportunities  etc.
+
+https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_contact.htm
+
+Day 2:
+Standard Object
+Custom object , validation Rules
+RelationShip master detail, lookup
+schema builder
+
+
+class Emp
+{
+id,name,loc,dob;
+code --database CRUD opertaion 
+
+}
+
+table 
+empno	ename	sal	deptno	mgr
+
+
+Objects of Sales Cloud
+
+1.Campaign- Campaign
+Represents and tracks a marketing campaign, such as a direct mail promotion, webinar, or trade show.stores details abt the campaing that we have done for marketing our product in Sales Cloud
+Supported Calls
+create(), delete(), describeLayout(), describeSObjects(), getDeleted(), getUpdated(), query(), retrieve(), search(), undelete(), update(), upsert()
+
+2.Lead- stores the details abt the customer potentially interested in product, eventually buy the product.
+3.Accounts—when lead is converted into business it is stored as Account. Represents an individual account, which is an organization or person involved with your business (such as customers, competitors, and partners).Accounts contains both Lead and contact .Lead get converted to account.. Details of all cutomers/company with whom we are working to sell the product.
+4.Contact: employees of customer company with whom we are going to do bussiness
+5.Opportunity:stores the information of the deals that have happened with customer or about to complete
+6.Product:object is used to store information abt the products/service that we are selling to customer.
+7.Price Book: stores the different prices of same product 
+8.Contract : once the deal is done the contract is stored in contract object 
+8.Order:
+
+
+Accounts—. Leads—
+Contacts—contact details of your actual customers. Represents a contact, which is a person associated with an account.
+Supported Calls
+create(), delete(), describeLayout(), describeSObjects(), getDeleted(), getUpdated(), merge(), query(), retrieve(), search(), undelete(), update(), upsert().
+
+Opportunities: Represents an opportunity, which is a sale or pending deal. Business of our company with customer. 
+Supported Calls
+create(), delete(), describeLayout(), describeSObjects(), getDeleted(), getUpdated(), query(), retrieve(), search(), undelete(), update(), upsert()
+
+
+Forecast
+Cases:tickets
+When lead is confirmes then get added to accounts
+
+Building Blocks of Salesforce
+==============================
+Tabs-are used to access the object
+profiles-collection of settings and permissions that a user have 
+Objects--are database tables where actual data is stored CRUD
+Fields--attributes of Object data types text,date,number, etc
+Records--are collection of fields and values that represents an entity/instance.
+
+Data Management Techniques
+
+https://trailhead.salesforce.com/en/content/learn/modules/data_modeling
+1. Data Import for records <50000
+2. Data loading for records >50000
+
+Salesforce uses Relational DataBase
+
+Security Model-- visibility specifies the scope of the filed 
+Profiles/Permission
+Field-Level Security for Profile
+
+RelationShips:
+Course Master table
+Student Child
+1 course can be enrolled by many stu but 1 stu can enroll only 1 course
+No primary anf foreign key  
+In Salesforce create relation from child side
+
+3 types of relation ships
+Lookup relationship--One to Many relationShip, lookup realtionship is created on child.even if we delete the master , no effect on child records.
+
+	Course
+
+Student		Assessment
+
+		Accounts
+
+	Opportunities		Contacts	
+
+Master-Details RelationShip(Same as Primary -Foreign key) :-is the parent child relationship . we can not delete data from parent Object as there are dependent child object . when we delete data from master associated child entries also get deleted.no orphan records.
+
+
+
+course(Parent)--Student(Child)
+
+
+,
+
+External lookup Relationship
+In salesforce Many to many relation is not possible, but by adding junction object we can create M:M relationship.
+
+
+
+https://trailhead.salesforce.com/content/learn/projects/workshop-battle-station
+
+
+
+
+Building the Object Model
+
+Page Layout 
+List view 
+
+
+Demos
+
+Day 3:
+=========================================================
+Salesforce Security Model:
+Users, Profiles,permission set, Roles.
+Levels of Data Access
+In this section, we will discuss the different levels of Data Access. There are four levels of data access.
+
+Organization Level
+It is created by maintaining a list of authorized users, setting password policies, and limiting login access to certain hours and certain locations.
+
+Objects Level
+It is done by setting permission on a particular object by allowing selective viewing, editing or deleting of any object in that record.
+
+Fields Level
+It is used to restrict access of users to certain fields even when the user has access to the object containing the field.
+
+Records Level
+This access level permits the user to access only certain records of an object.
+
+In this chapter, we are going to focus on Control Access to the Organization using the three mechanisms described below.
+
+profile--have set of permissions.Profile settings determine what users can see (control the visibility of objects, tabs, CRUD, fields) and do with objects.A profile controls “Object permissions, Field permissions, User permissions, Tab settings, App settings, Apex class access, Visualforce page access, Page layouts, Record Types, Login hours & Login IP ranges.
+
+permission sets-to assign additional permission to an individual  . grant and revoke the permission sets, that extends the functionality of profile
+
+Roles controle which records/objects a user can SEE based on their role in the hierarchy.A role hierarchy controls the level of visibility that users have to an organization data. By defining role hierarchies we can share access to records. Users assigned to roles near the top of hierarchies like (CEO, executives, and other higher level roles) get to access the data of all users who fall directly below them I hierarchy.
+
+
+Forexample 
+Sales team will work with leads,,opportunities  where as marketing team will focus on marketing of a product,existing customers, new customers leads ,opp,customers, customer support team no need of leads and oppro only cutsomers details are required for customer handling .
+
+Sales team had can have additional permissions along with sales profile.
+
+order of execustion in salesforce --google
+email approval template
+Approval Process.
+workflow process
+Chatter is same as Q & A forum
+
+Day 4:
+Process Builder
+	Reports 
+
+
+
